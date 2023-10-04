@@ -31,8 +31,14 @@ public class CustomerController {
 	public String getMessage() {
 		
 		return "Welcome to springboot Application";
-	}	
-	
+	}
+
+	@GetMapping("/showMessage")
+	public String getMyMessage() {
+
+		return "Welcome to springboot JPA Application";
+	}
+
 	@GetMapping("/showAllCustomers")
 	
 	List<Customer>  showAllCustomers(){
